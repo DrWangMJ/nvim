@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

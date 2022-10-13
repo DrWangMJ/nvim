@@ -7,6 +7,10 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'sainnhe/everforest'
+
+  -- lsp
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
   use 'neovim/nvim-lspconfig'
 
   use 'hrsh7th/cmp-nvim-lsp'
@@ -28,7 +32,7 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'kyazdani42/nvim-web-devicons'
-
+  
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use 'numToStr/Comment.nvim'
