@@ -32,9 +32,9 @@ return require('packer').startup(function(use)
   use 'jayp0521/mason-null-ls.nvim'
 
   use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
+    'nvim-treesitter/nvim-treesitter'
   }
+  use 'akinsho/toggleterm.nvim'
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
