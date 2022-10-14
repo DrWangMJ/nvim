@@ -1,3 +1,9 @@
+-- mason lspconfig
+local _, mason_lspconfig = pcall(require, "mason-lspconfig")
+mason_lspconfig.setup({
+  ensure_installed = { "sumneko_lua", "pyright", "remark_ls" }, 
+  automatic_installation = false,
+})
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -22,7 +28,19 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
 end
 
-require('lspconfig')['pyright'].setup{
-    on_attach = on_attach,
-    flags = lsp_flags,
+-- require('lspconfig')['pyright'].setup{
+--     on_attach = on_attach,
+--     flags = lsp_flags,
+-- }
+
+local _, lspconfig = pcall(require, "lspconfig")
+
+mason_lspconfig.setup_handlers {
+-- This is a default handler that will be called for each installed server (also for new servers that are installed during a session)
+  function (server_name)
+    lspconfig[server_name].setup {
+      on_attach = on_attach,
+      flags = lsp_flags,
+    }
+  end,
 }
