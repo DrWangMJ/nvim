@@ -37,6 +37,8 @@ return require('packer').startup(function(use)
   use 'akinsho/toggleterm.nvim'
 
   use 'max397574/better-escape.nvim'
+  use "goolord/alpha-nvim"
+  use 'ahmedkhalf/project.nvim'
 
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
