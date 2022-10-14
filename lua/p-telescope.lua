@@ -15,26 +15,18 @@ require('telescope').setup{
         -- map actions.which_key to <C-h> (default: <C-/>)
         -- actions.which_key shows the mappings for your picker,
         -- e.g. git_{create, delete, ...}_branch for the git_branches picker
-<<<<<<< HEAD
-        ["esc"] = actions.close
-        ["<C-j>"] = actions.move_selection_next,
-        ["<C-k>"] = actions.move_selection_previous,
-        ["<C-n>"] = actions.cycle_history_next,
-        ["<C-p>"] = actions.cycle_history_prev,
-=======
         ["esc"] = actions.close,
         ['<C-j>'] = actions.move_selection_next,
         ['<C-k>'] = actions.move_selection_previous,
         ['<C-n>'] = actions.cycle_history_next,
         ['<C-p>'] = actions.cycle_history_prev
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
       }
     }
   },
   layout_config = {
     horizontal = {
-      preview_cutoff = 100,
-      preview_width = 0.6,
+      preview_cutoff = 150,
+      preview_width = 0.7,
     }
   },
   pickers = {
@@ -58,6 +50,7 @@ require('telescope').setup{
       mappings = {
         ['i'] = {
           ['<C-w>'] = function() vim.cmd('normal vbd') end,
+          ['<C-h>'] = fb_actions.goto_parent_dir,
         },
         ['n'] = {
           ['h'] = fb_actions.goto_parent_dir,
@@ -78,8 +71,5 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', 'ff', builtin.find_files, {})
 vim.keymap.set('n', 'fg', builtin.live_grep, {})
 vim.keymap.set('n', 'fb', builtin.buffers, {})
-<<<<<<< HEAD
 --vim.keymap.set('n', 'fh', builtin.help_tags, {})
-=======
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
 vim.keymap.set('n', '<leader>fb', '<cmd>lua require("telescope").extensions.file_browser.file_browser({path="%:p:h", cwd=telescope_buffer_dir(), respect_git_ignore=false, hidden=true})<CR>', opts)

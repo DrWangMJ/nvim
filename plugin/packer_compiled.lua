@@ -76,11 +76,7 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/Comment.nvim",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
@@ -105,11 +101,7 @@ _G.packer_plugins = {
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lua",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/hrsh7th/cmp-nvim-lua"
   },
   ["cmp-path"] = {
@@ -132,20 +124,29 @@ _G.packer_plugins = {
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
-<<<<<<< HEAD
-  ["nvim-autopairs"] = {
+  ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
-=======
+    path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason-null-ls.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-null-ls.nvim",
+    url = "https://github.com/jayp0521/mason-null-ls.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
+    path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
   ["nvim-cmp"] = {
@@ -160,29 +161,17 @@ _G.packer_plugins = {
   },
   ["nvim-treesitter"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
@@ -192,29 +181,17 @@ _G.packer_plugins = {
   },
   ["plenary.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/plenary.nvim",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-<<<<<<< HEAD
     path = "C:\\Users\\mjwang\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
-=======
-    path = "/home/mjwang/.local/share/nvim/site/pack/packer/start/telescope.nvim",
->>>>>>> 2710e94454a3f5a80af1367f84e751473737a768
     url = "https://github.com/nvim-telescope/telescope.nvim"
   }
 }
