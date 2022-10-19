@@ -53,6 +53,8 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
+
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
 	use("numToStr/Comment.nvim")
