@@ -14,7 +14,6 @@ null_ls.setup({
 		--
 		-- end
 		-- auto format when save file
-    print(client.server_capabilities.documentFormattingProvider)
 		if client.server_capabilities.documentFormattingProvider then
 			vim.cmd([[
             augroup LspFormatting
@@ -25,7 +24,6 @@ null_ls.setup({
 		end
 	end,
 })
-
 
 local mason_null_ls = require("mason-null-ls")
 mason_null_ls.setup({
