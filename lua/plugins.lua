@@ -45,6 +45,14 @@ return require("packer").startup(function(use)
 		branch = "v2",
 	})
 
+	use({
+		"kylechui/nvim-surround",
+		tag = "*",
+		config = function()
+			require("nvim-surround").setup({})
+		end,
+	})
+
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
 	use("numToStr/Comment.nvim")

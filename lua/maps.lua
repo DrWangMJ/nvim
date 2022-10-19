@@ -5,6 +5,9 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>q", "<Cmd>q<CR>")
 keymap.set("n", "<leader>w", "<Cmd>w<CR>")
 
+keymap.set("n", ">", ">>")
+keymap.set("n", "<", "<<")
+
 -- select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
